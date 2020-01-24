@@ -1,4 +1,3 @@
-
 public class OperatorEx18 {
 	public static void main(String args[])
 	{
