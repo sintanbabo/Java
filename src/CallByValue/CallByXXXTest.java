@@ -1,3 +1,5 @@
+package src.CallByValue;
+
 public class CallByXXXTest
 {
 	public static void assignNewPerson(Person p)

@@ -1,4 +1,4 @@
-package ch2;
+package src.ch2;
 
 public class PrintfEx1 {
 
