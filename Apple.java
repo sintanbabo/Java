@@ -5,8 +5,20 @@ public class Apple
 {
     enum Color {RED, GREEN};
 
-    public static Color color;
+    public Color color;
     public int weight;
+
+    public Apple()
+    {
+        this.color = Color.RED;
+        this.weight = 0;
+    }
+
+    public Apple(int weight, Color color)
+    {
+        this.color = color;
+        this.weight = weight;
+    }
 
     public Color getColor() {
         return color;
@@ -15,18 +27,6 @@ public class Apple
     public int getWeight()
     {
         return weight;
-    }
-
-    public static List<Apple> filterApples(List<Apple> inventory, ApplePredicate p) {
-        List<Apple> result = new ArrayList<>();
-
-        for(Apple apple : inventory) {
-            if (p.test(apple)) {
-                result.add(apple);
-            }
-        }
-
-        return result;
     }
 
     public static List<Apple> filterGreenApple(List<Apple> inventory) {
